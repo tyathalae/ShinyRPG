@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 class Character
 {
@@ -35,6 +36,15 @@ public:
 	{
 		Defence = 2 + (Level * 1) + (Agility * 1) + (Endurance * 2);
 		return Defence;
+	}
+
+	void ShowStats()
+	{
+		std::cout << "1- Strength: " << Strength << std::endl;
+		std::cout << "2- Endurance: " << Endurance << std::endl;
+		std::cout << "3- Intelligence: " << Intelligence << std::endl;
+		std::cout << "4- Agility: " << Agility << std::endl;
+		std::cout << "5- Luck: " << Luck << std::endl;
 	}
 };
 
